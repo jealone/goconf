@@ -1,0 +1,16 @@
+---
+---
+---
+version: "1"
+kind: memcache
+metadata:
+  - name: test
+spec:
+  test: test
+
+---
+version: "2"
+kind: redis
+spec:
+  test: test
+
