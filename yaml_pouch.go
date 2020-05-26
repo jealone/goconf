@@ -24,7 +24,7 @@ func (c *YamlConfig) GetMetadata() *yaml.Node {
 }
 
 func (c *YamlConfig) GetSpec() *yaml.Node {
-	return &c.Metadata
+	return &c.Spec
 }
 
 func Unmarshal(buf []byte, c interface{}) error {
