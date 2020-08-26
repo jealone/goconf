@@ -28,6 +28,7 @@ func NewYamlConfig(r io.Reader) (nodes []*YamlConfig, err error) {
 				nodes = nil
 				return
 			}
+			conf.RawByte = chunk
 			nodes = append(nodes, conf)
 		}
 	}
